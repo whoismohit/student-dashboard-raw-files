@@ -32,7 +32,8 @@ View students in dashboard
 
 Search/filter functionality
 
-📂 Tech Stack
+## 📂 Tech Stack
+
 Python 3
 
 Flask
