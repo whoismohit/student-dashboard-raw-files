@@ -21,8 +21,9 @@ pip install -r requirements.txt
 # 4. Run the app
 python app.py
 App will be available at http://127.0.0.1:5000/
+```
 
-🧱 Features
+## 🧱 Features
 User registration and login
 
 Add/Edit/Delete student records
