@@ -1,4 +1,26 @@
 {% extends "base.html" %}
 {% block content %}
-<p>Welcome to the Student Dashboard. Work in progress...</p>
+<h2>Welcome to Student Dashboard</h2>
+
+<form method="POST" action="{{ url_for('add_student') }}">
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="text" name="course" placeholder="Course" required>
+    <button type="submit">Add Student</button>
+</form>
+
+<table>
+    <tr>
+        <th>ID</th><th>Name</th><th>Email</th><th>Course</th><th>Action</th>
+    </tr>
+    {% for student in students %}
+    <tr>
+        <td>{{ student.id }}</td>
+        <td>{{ student.name }}</td>
+        <td>{{ student.email }}</td>
+        <td>{{ student.course }}</td>
+        <td><a href="{{ url_for('delete_student', id=student.id) }}">Delete</a></td>
+    </tr>
+    {% endfor %}
+</table>
 {% endblock %}
