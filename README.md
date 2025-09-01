@@ -1,5 +1,5 @@
 # student-dashboard-raw-files
-Just raw and practice files until the project is ready to deploy and work perfectly.
+Skeleton in the main branch but working and updated files in the other branch. 
 
 # 🧪 Student Dashboard (Flask)
 
