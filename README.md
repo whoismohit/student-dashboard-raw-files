@@ -8,7 +8,7 @@ A basic Flask app with login/logout and student record CRUD operations. Built as
 ## ⚙️ How to Run
 
 ```bash
-# 1. Create virtual environment
+# 1. Create virtual environment   
 python -m venv venv
 
 # 2. Activate environment
